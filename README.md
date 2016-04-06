@@ -5,7 +5,7 @@
 * # 292 Nim Game
 
 #Datail
-** #292 Nim Game **
+## #292 Nim Game 
 ###Leetcode Link:
 https://leetcode.com/problems/nim-game/
 ###Source Link:
