@@ -1,0 +1,45 @@
+package leetcode;
+
+//*****************************************************************************
+//the first version 
+public class AddDigits {
+	public static int addDigits(int m) {
+		int sum = getSum(m);
+		while (sum >= 10) {
+			return sum = getSum(sum);
+		}
+		return sum;
+	}
+
+	public static int getSum(int m) {
+		int sum = 0;
+		while (m > 10) {
+			sum += m % 10;
+			m = (m - m % 10) / 10;
+		}
+		return sum + m;
+	}
+	}
+}
+//******************************************************************************
+//the second version 
+//learn from others ,the thoughts are much clear
+public static int addDigits(int m) {
+		int sum = 0;
+		if (m < 10)
+			return m;
+		else {
+			while (m != 0) {
+				sum = m % 10;
+				m /= 10; //pay attention please
+			}
+			return sum;
+		}
+	}
+	//**************************************************************************
+	//the recursive one is not what we want
+	// Link: http://my.oschina.net/Tsybius2014/blog/497645
+	public static int addDigits(int m){
+		 return (m - 1) % 9 + 1;
+	}
+	
