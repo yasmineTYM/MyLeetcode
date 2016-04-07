@@ -17,3 +17,6 @@ we can think these problem from the last stone, if you want to win, you may be h
 ###Leetcode Link:
 https://leetcode.com/problems/add-digits/
 ###Source Link:
+https://github.com/yasmineTYM/MyLeetcode/blob/master/AddDigits
+###My Solution:
+I use three method, the first one is not totally correct when i test it in eclipse, the second one is recursive which i understand now, but the last which is the answer i haven't figure it out.
