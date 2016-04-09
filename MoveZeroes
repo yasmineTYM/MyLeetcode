@@ -1,0 +1,28 @@
+怎么打印一个数组：
+1.可以用for循环打印
+2.可以将数组转化成有序的List打印出来
+**输出的时候不能直接system.out.print(array)
+
+怎么声明一个数组：
+1.先声明后创建： 
+int array[];
+array=new int [4];
+2.在声明的同时创建
+int array[]=new int[10];
+3.直接赋值
+int array[]=new int[1,2,3,4];
+
+int j = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] != 0) {
+				nums[j++] = nums[i];
+			}
+		}
+		while (j < nums.length) {
+			nums[j++] = 0;
+
+		}
+思想很简单，就是用两个指针，i从开始扫描到结尾
+当nums[i]不等于时，就把值赋给nums[j]，
+当j的长度小于数组的长度的时候
+就直接添0
