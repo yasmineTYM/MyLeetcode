@@ -31,3 +31,8 @@ More details in the source link.
 ### PS
 在java中怎么声明数组 以及 怎么输出数组
 
+## #104 Maximum depth of binary tree
+### Leetcode Link:
+https://leetcode.com/problems/maximum-depth-of-binary-tree/
+### Source Link:
+
