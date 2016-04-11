@@ -1,0 +1,49 @@
+//爸爸真是能写出来一个不容易还超时一刚 让我去看看大神怎么写的吧 ：（
+public class Solution {
+    public static boolean isHappy(int n) {
+    if(n<1)
+    return false;            //一开始没加 也是傻逼
+		 if(n==1)
+			 return true;
+	   while(n!=1){
+		   n=add(n);
+		   if(n==1)
+			   return true;
+	   }
+	   return false;
+	    }
+	 public static int add(int n)   //我测试了一下 好像是对的把
+	 {
+		 int m;
+		 int sum=0;
+		 while(n!=0)
+		 {
+			 m=n%10;
+			 sum+=m*m;
+			 n=n/10;
+		 }
+		 return sum;
+	 }
+}
+
+//
+
+public class Solution  {
+public boolean isHappy(int n) {
+		Set<Integer> res = new HashSet<>();  //学会如何创建哈希表
+		int sum = n;
+		while (sum != 1) {
+			n = sum;
+			sum = 0;
+			while (n != 0) {
+				sum += (n % 10) * (n % 10);  //怎么样是return false ：一直做知道与哈希表之前存在的值重复了 就不是快乐数
+				n /= 10;
+			}
+			if (res.contains(sum)) {
+				return false;
+			}
+			res.add(sum);
+		}
+		return true;
+
+	}}
