@@ -35,4 +35,12 @@ More details in the source link.
 ### Leetcode Link:
 https://leetcode.com/problems/maximum-depth-of-binary-tree/
 ### Source Link:
+https://github.com/yasmineTYM/MyLeetcode/blob/master/MaximumDepth
 
+### #202 Happy Number
+### Leetcode Link:
+https://leetcode.com/problems/happy-number/
+###Source Link:
+https://github.com/yasmineTYM/MyLeetcode/blob/master/HappyNumber
+### PS
+有关哈希表的问题
